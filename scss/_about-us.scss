@@ -1,0 +1,60 @@
+.about-us {
+  background-color: #221e26;
+  height: 727px;
+  display: flex;
+  justify-content: center;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about-us-in {
+  position: relative;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 40px 40px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 876px;
+  max-height: 476px;
+}
+
+.spread-line {
+  width: 350px;
+  margin: 35px 0 25px;
+  height: 1px;
+  background-color: #462b6e;
+}
+
+.about-us-subheader {
+  font-family: "Muller Medium";
+  font-size: 24px;
+  color: #221e26;
+  line-height: 1.5;
+}
+
+.about-us-info {
+  font-family: "Muller Light";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #221e26;
+  b {
+    font-family: "Muller Regular";
+    font-weight: 300;
+  }
+}
+.about-us-rocket {
+  position: absolute;
+  left: -203px;
+  bottom: -159px;
+}
+
+.about-us-crab {
+  position: absolute;
+  right: -250px;
+  bottom: -146px;
+}

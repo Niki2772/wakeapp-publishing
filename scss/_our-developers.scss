@@ -1,0 +1,44 @@
+.developers {
+  padding-bottom: 92px;
+  .title {
+    color: #eeeef1;
+    padding-bottom: 0;
+    margin-bottom: 95px;
+  }
+}
+
+.developers-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.developer-info {
+  width: 302px;
+  height: 226px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+
+.developer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.developers-header {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ff5252;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+.developers-descr{
+  font-size: 20px;
+  color: #221e26;
+  line-height: 1.2;
+  font-family: "Muller Light";
+}

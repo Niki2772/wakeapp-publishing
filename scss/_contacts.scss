@@ -1,0 +1,40 @@
+.contacts {
+  background-image: linear-gradient(to bottom, #282031, #221e26);
+  text-align: center;
+  .wrapper {
+    padding: 100px 0 92px;
+  }
+
+  .subheader {
+    font-size: 38px;
+    font-weight: 300;
+    letter-spacing: 0.47px;
+    color: #eeeef1;
+    font-family: "Muller Light";
+    padding: 74px 0 42px;
+  }
+}
+
+.contact-us-wrap {
+  padding-top: 96px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-us-in {
+  text-align: center;
+}
+
+.sm-name {
+  font-size: 24px;
+  color: #eeeef1;
+  font-family: "Muller Light";
+  padding-bottom: 24px;
+}
+
+.sm-link {
+  font-size: 28px;
+  font-weight: 500;
+  color: #eeeef1;
+  text-decoration: none;
+}

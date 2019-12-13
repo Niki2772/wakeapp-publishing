@@ -1,0 +1,989 @@
+@font-face {
+  font-family: "Muller Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/MullerRegular.eot");
+  src: url("/fonts/MullerRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/MullerRegular.woff") format("woff"), url("/fonts/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/MullerBold.eot");
+  src: url("/fonts/MullerBold.eot?#iefix") format("embedded-opentype"), url("/fonts/MullerBold.woff") format("woff"), url("/fonts/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Light";
+  font-weight: lighter;
+  font-style: normal;
+  src: url("/fonts/MullerLight.eot");
+  src: url("/fonts/MullerLight.eot?#iefix") format("embedded-opentype"), url("/fonts/MullerLight.woff") format("woff"), url("/fonts/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Muller Medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/MullerMedium.eot");
+  src: url("/fonts/MullerMedium.eot?#iefix") format("embedded-opentype"), url("/fonts/MullerMedium.woff") format("woff"), url("/fonts/MullerMedium.ttf") format("truetype");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font: 100% "Muller Regular";
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+
+.slick-loading .slick-list {
+  background: #fff center center no-repeat;
+}
+
+/* Icons */
+
+@font-face {
+  font-family: "slick";
+  src: slick-font-url("slick.eot");
+  src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
+  background: transparent;
+  top: 46px;
+  -webkit-transform: translate(-45deg);
+  transform: rotate(-45deg);
+  padding: 0;
+  border: 1px solid #eeeef1;
+  outline: none;
+  font-size: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: #fff;
+  border: 1px solid #eeeef1;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  border-color: #ff5252;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  border: 1.5px solid #eeeef1;
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: block;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.slick-prev {
+  left: -56px;
+}
+
+.slick-prev:before {
+  border-bottom: 0;
+  border-right: 0;
+  -webkit-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+}
+
+.slick-next {
+  right: -56px;
+}
+
+.slick-next:before {
+  border-top: 0;
+  border-left: 0;
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+}
+
+/* Dots */
+
+.slick-dots {
+  position: relative;
+  margin-top: 32px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 20px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  background: transparent;
+  border: 3px solid #eeeef1;
+  border-radius: 16px;
+  display: block;
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  line-height: 20px;
+  text-align: center;
+  color: #eeeef1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button {
+  background: #eeeef1;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+
+.btn {
+  background: #ff5252;
+  border: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 24px;
+  padding: 14px 32px 18px 32px;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff3030;
+}
+
+.title {
+  font: 38px "Muller Light";
+  letter-spacing: 0.47px;
+  color: #ff5252;
+  padding: 16px 0 32px;
+}
+
+.title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon {
+  background: #ffffff;
+  width: 54px;
+  height: 54px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 14px 0 rgba(174, 179, 188, 0.5);
+  box-shadow: 0 0 14px 0 rgba(174, 179, 188, 0.5);
+  padding: 10px;
+}
+
+.title-icon {
+  margin: 0 auto;
+  display: block;
+}
+
+b {
+  font-weight: bold;
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  background: #fff;
+  height: 80px;
+}
+
+.header .btn {
+  padding: 12.5px 36.5px;
+  font-size: 16px;
+}
+
+.header .wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 0;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-navigation li {
+  margin-left: 54px;
+}
+
+.header-navigation li:first-child {
+  margin-left: 0;
+}
+
+.header-navigation a {
+  color: #221e26;
+  text-decoration: none;
+}
+
+.header-navigation a:hover {
+  text-decoration: underline;
+  color: #221e26;
+}
+
+.masthead {
+  background: #221e26;
+  height: 1166px;
+  overflow: hidden;
+}
+
+.masthead .wrapper {
+  padding-top: 0;
+}
+
+.logo-wrap {
+  position: relative;
+  padding: 96px 0 0 0;
+}
+
+.crab-logo {
+  top: 265px;
+  left: 684px;
+  position: absolute;
+}
+
+.sub-header {
+  margin-top: 40px;
+  font-size: 38px;
+  letter-spacing: 0.47px;
+  color: #eeeef1;
+}
+
+.masthead-list li {
+  font: 24px "Muller Light";
+  letter-spacing: 0.3px;
+  color: #eeeef1;
+  margin: 24px 0;
+}
+
+.masthead-list li::before {
+  background: #eeeef1;
+  content: '';
+  margin: 2px 15px 2px 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+}
+
+.about-us {
+  background: #221e26;
+  height: 727px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about-us .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about-us-in {
+  background: #ffffff;
+  position: relative;
+  border-radius: 8px;
+  padding: 40px 40px 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 876px;
+  max-height: 476px;
+}
+
+.spread-line {
+  background: #462b6e;
+  width: 350px;
+  margin: 35px 0 25px;
+  height: 1px;
+}
+
+.about-us-subheader {
+  font: 24px/1.5 "Muller Medium";
+  color: #221e26;
+}
+
+.about-us-info {
+  font: 300 24px/1.33 "Muller Light";
+  color: #221e26;
+}
+
+.about-us-info b {
+  font-family: "Muller Regular";
+  font-weight: 300;
+}
+
+.about-us-rocket {
+  position: absolute;
+  left: -203px;
+  bottom: -159px;
+}
+
+.about-us-crab {
+  position: absolute;
+  right: -250px;
+  bottom: -146px;
+}
+
+.our-projects {
+  background: #ff5252;
+  padding-bottom: 86px;
+}
+
+.our-projects .title {
+  color: #eeeef1;
+  padding-bottom: 42px;
+}
+
+.slider-item {
+  width: 184px;
+}
+
+.slider-item-pic {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.slider-item-name {
+  color: #eeeef1;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.developers {
+  padding-bottom: 92px;
+}
+
+.developers .title {
+  color: #eeeef1;
+  padding-bottom: 0;
+  margin-bottom: 95px;
+}
+
+.developers-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.developer-info {
+  background: #ffffff;
+  width: 302px;
+  height: 226px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 30px;
+}
+
+.developer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.developers-header {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ff5252;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+
+.developers-descr {
+  font: 20px/1.2 "Muller Light";
+  color: #221e26;
+}
+
+.services {
+  background: #eeeef1;
+  padding-bottom: 175px;
+}
+
+.services .jarallax-img {
+  width: 339px;
+  height: 476px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background-size: initial;
+  position: absolute;
+}
+
+.see-more {
+  font: 20px/1.2 "Muller Light";
+  background: #ff5252;
+  max-width: 447px;
+  padding: 35px 33px;
+  border-radius: 6px;
+  text-align: center;
+  color: #eeeef1;
+  position: absolute;
+  top: 430px;
+  left: 480px;
+}
+
+.mountain {
+  background: #eeeef1;
+  background: url("/images/mountain-bg.svg") no-repeat 100% 100%;
+  height: 1588px;
+  width: 100%;
+  position: relative;
+}
+
+.mountain-list {
+  position: absolute;
+  right: 0;
+  top: 274px;
+  width: 1145px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mountain-list li {
+  background: #eeeef1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 0 0 160px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mountain-list li:hover {
+  background: #fff !important;
+}
+
+.mountain-list li:after {
+  content: '';
+  width: 483px;
+  height: 1px;
+  background: #462b6e;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.mountain-list li:nth-child(1) {
+  height: 344px;
+  -webkit-clip-path: polygon(634px 0px, 816px 236px, 831px 259px, 748px 342px, 622px 289px, 502px 319px, 464px 261px, 505px 190px, 634px 0px);
+  clip-path: polygon(634px 0px, 816px 236px, 831px 259px, 748px 342px, 622px 289px, 502px 319px, 464px 261px, 505px 190px, 634px 0px);
+}
+
+.mountain-list li:nth-child(2) {
+  height: calc(97px + 81px);
+  -webkit-clip-path: polygon(407px 100%, 435px 45px, 463px 0px, 501px 59.3px, 622px 28.8px, 748px 83px, 832.5px -1px, 911px 121px, 937px 100%);
+  clip-path: polygon(407px 100%, 435px 45px, 463px 0px, 501px 59.3px, 622px 28.8px, 748px 83px, 832.5px -1px, 911px 121px, 937px 100%);
+  position: relative;
+  top: -83px;
+  margin-bottom: -83px;
+}
+
+.mountain-list li:nth-child(3) {
+  height: 124px;
+  -webkit-clip-path: polygon(407px 0, 937px 0, 994px 100%, 379px 100%);
+  clip-path: polygon(407px 0, 937px 0, 994px 100%, 379px 100%);
+}
+
+.mountain-list li:nth-child(4) {
+  height: 95px;
+  -webkit-clip-path: polygon(378px 0, 995px 0, 1069px 100%, 320px 100%);
+  clip-path: polygon(378px 0, 995px 0, 1069px 100%, 320px 100%);
+}
+
+.mountain-list li:nth-child(5) {
+  height: 97px;
+  -webkit-clip-path: polygon(320px 0, 1068px 0, 1145px 100%, 275px 100%);
+  clip-path: polygon(320px 0, 1068px 0, 1145px 100%, 275px 100%);
+}
+
+.mountain-list li:nth-child(6) {
+  height: 96px;
+  -webkit-clip-path: polygon(275px 0, 1145px 0, 1145px 100%, 230px 100%);
+  clip-path: polygon(275px 0, 1145px 0, 1145px 100%, 230px 100%);
+}
+
+.mountain-list li:nth-child(7) {
+  height: 95px;
+  -webkit-clip-path: polygon(230px 0px, 1145px 0, 1145px 100%, 151px 100%, 194px 45px);
+  clip-path: polygon(230px 0px, 1145px 0, 1145px 100%, 151px 100%, 194px 45px);
+}
+
+.mountain-list li:nth-child(8) {
+  height: 95px;
+  -webkit-clip-path: polygon(150px 0, 1145px 0, 1145px 100%, 74px 100%);
+  clip-path: polygon(150px 0, 1145px 0, 1145px 100%, 74px 100%);
+}
+
+.mountain-list li:nth-child(9) {
+  height: 95px;
+  -webkit-clip-path: polygon(74px 0, 1145px 0, 1145px 100%, 0 100%);
+  clip-path: polygon(74px 0, 1145px 0, 1145px 100%, 0 100%);
+}
+
+.bg-forest {
+  background: url(/images/bg-forest.svg) 100% 0% no-repeat;
+  height: 389px;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  bottom: -120px;
+}
+
+.bg-trees {
+  background: url(/images/bg-trees.svg) 100% 0% no-repeat;
+  background-size: cover;
+  height: 389px;
+  width: 100%;
+  position: absolute;
+  bottom: -175px;
+}
+
+.contacts {
+  background: linear-gradient(to bottom, #282031, #221e26);
+  text-align: center;
+}
+
+.contacts .wrapper {
+  padding: 100px 0 92px;
+}
+
+.contacts .subheader {
+  font: 300 38px "Muller Light";
+  letter-spacing: 0.47px;
+  color: #eeeef1;
+  padding: 74px 0 42px;
+}
+
+.contact-us-wrap {
+  padding-top: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.contact-us-in {
+  text-align: center;
+}
+
+.sm-name {
+  font: 24px "Muller Light";
+  color: #eeeef1;
+  padding-bottom: 24px;
+}
+
+.sm-link {
+  font-size: 28px;
+  font-weight: 500;
+  color: #eeeef1;
+  text-decoration: none;
+}
+
+.footer {
+  background: #eeeef1;
+}
+
+.footer .wrapper {
+  padding: 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sm-icon {
+  margin-left: 48px;
+  cursor: pointer;
+}
+
+.rights {
+  font: 24px "Muller Light";
+  color: #221e26;
+  text-decoration: none;
+}

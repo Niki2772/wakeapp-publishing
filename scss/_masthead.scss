@@ -1,0 +1,44 @@
+.masthead {
+  height:1166px;
+  background-color: #221e26;
+  overflow: hidden;
+  .wrapper{
+    padding-top: 0;
+  }
+}
+.logo-wrap {
+  position: relative;
+  padding: 96px 0 0 0;
+}
+
+.crab-logo {
+  top: 265px;
+  left: 684px;
+  position: absolute;
+}
+
+.sub-header {
+  margin-top: 40px;
+  font-size: 38px;
+  letter-spacing: 0.47px;
+  color: #eeeef1;
+}
+
+.masthead-list {
+  li {
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    color: #eeeef1;
+    margin: 24px 0;
+    font-family: "Muller Light";
+    &::before {
+      content: '';
+      margin: 2px 15px 2px 0;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 12px;
+      background-color: #eeeef1;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.footer {
+  background-color: #eeeef1;
+
+  .wrapper {
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.sm-icon {
+  margin-left: 48px;
+  cursor: pointer;
+}
+
+.rights {
+  font-family: "Muller Light";
+  font-size: 24px;
+  color: #221e26;
+  text-decoration: none;
+}

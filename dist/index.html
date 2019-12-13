@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arrow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-element.min.js"></script>
+    <script src="/js/all.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <a href="/" class="headerLogo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="155" height="25" viewBox="0 0 140 25">
+                <g fill="#8f6eb9" fill-rule="evenodd" stroke="transparent" stroke-width=".5">
+                    <path d="M106.276,5.873 L99.057,5.873 L99.057,8.6 L106.257,8.6 C107.688798,8.6 108.8495,9.76070179 108.8495,11.1925 C108.8495,12.6242982 107.688798,13.785 106.257,13.785 L101.8,13.785 L101.8,11.328 L99.058,11.328 L99.058,20 L101.8,20 L101.8,16.517 L106.287,16.517 L106.287,16.511 C108.18676,16.5092137 109.941257,15.4940533 110.88959,13.8479199 C111.837923,12.2017865 111.836017,10.1747669 110.88459,8.53041984 C109.933163,6.88607276 108.17676,5.87421363 106.277,5.876 L106.276,5.873 Z"
+                          id="Path" stroke-dasharray="71.04631805419922" style="stroke-dashoffset: 0px;"></path>
+                    <path d="M128,11.194 C127.99121,8.29364314 125.66491,5.93268183 122.765,5.881 L122.765,5.875 L115.454,5.875 L115.454,8.6 L122.654,8.6 C124.085522,8.6 125.246,9.76047793 125.246,11.192 C125.246,12.6235221 124.085522,13.784 122.654,13.784 L118.2,13.784 L118.2,11.328 L115.458,11.328 L115.458,20 L118.2,20 L118.2,16.517 L122.769,16.517 L122.769,16.506 C125.667182,16.4527068 127.991243,14.0926591 128,11.194 Z"
+                          id="Path" stroke-dasharray="71.03498840332031" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M36.359 16.533 35.224 13.806 32.711 13.806 34.985 9.054 40.222 20 43.259 20 36.5 5.881 36.5 5.875 33.459 5.875 33.459 5.881 26.71 20 29.746 20 31.407 16.53 36.359 16.53z"
+                          stroke-dasharray="72.09976196289062" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M64.408 5.875 63.908 5.875 63.908 20 74.887 20 75.872 17.274 66.649 17.274 66.649 14.3 71.884 14.3 71.884 11.576 66.649 11.576 66.649 8.6 75.872 8.6 75.872 5.875z"
+                          stroke-dasharray="80.281494140625" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M56.8 20 60.19 20 53.724 12.112 59.748 6.121 56.006 6.121 49.706 12.389 49.706 5.875 46.964 5.875 46.964 20 49.7 20 49.7 16.11 51.854 13.968z"
+                          stroke-dasharray="75.55960845947266" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M88.6 5.875 85.56 5.875 85.56 5.881 81.769 13.807 81.769 13.807 81.769 13.807 78.807 20 81.843 20 83.504 16.53 88.256 16.53 87.121 13.803 84.808 13.803 87.082 9.051 92.319 20 95.356 20 88.6 5.881z"
+                          stroke-dasharray="71.69889831542969" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M17.527 19.982 17.518 20.002 20.531 20.002 20.522 19.982 27.8 3.769 29.136 4.389 28.045 0 23.962 1.989 25.318 2.618 19.025 16.6 14.281 5.878 11.281 5.878 6.543 16.6 3.043 8.672 0.005 8.672 5.05 19.988 5.041 20.008 8.054 20.008 8.045 19.988 12.789 9.267z"
+                          stroke-dasharray="125.2303695678711" style="stroke-dashoffset: 0px;"></path>
+                </g>
+            </svg>
+        </a>
+        <nav>
+            <ul class="header-navigation">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Преимущества</a></li>
+                <li><a href="">Publishing</a></li>
+                <li><a href="">Контакты</a></li>
+                <li>
+                    <button class="btn">Отправить проект</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="masthead jarallax">
+    <div class="wrapper">
+        <img class="jarallax-img" src="/images/masthead-bg@2x.jpg" alt="">
+        <div class="logo-wrap">
+            <img class="masthead-logo" src="/images/masthead-logo.svg"/>
+            <img class="crab-logo" src="/images/crab-logo.png" alt="">
+        </div>
+        <div>
+            <p class="sub-header">Выведем вашу игру на <br/> новый уровень!</p>
+            <ul class="masthead-list">
+                <li>Улучшим <b>монетизацию</b></li>
+                <li>Настроим <b>рекламу</b></li>
+                <li>Привлечем <b>миллионы пользователей </b></li>
+                <button class="btn">Отправить проект</button>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="about-us jarallax">
+    <div class="wrapper">
+        <div class="about-us-in">
+            <h3 class="title-wrap">
+                <div class="icon">
+                    <img src="/images/boy-broad-smile.svg" class="title-icon"/>
+                </div>
+                <span class="title">О нас</span>
+            </h3>
+
+            <div class="about-us-subheader">Wakeapp Games — это игровая компания, занимающиеся полным аспектом
+                продвижения и реализации мобильных игр.
+            </div>
+            <div class="spread-line"></div>
+            <div class="about-us-info"><b>Наша главная цель</b> — помощь талантливым разработчикам мобильных игр на пути
+                от создания первых рабочих прототипов до полной раскрутки и вывода в топ на мобильном рынке.
+            </div>
+            <img src="/images/about-us-rocket.png" class="about-us-rocket" alt="">
+            <img src="/images/about-us-crab.png" class="about-us-crab" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="our-projects jarallax">
+    <div class="wrapper">
+        <h3 class="title-wrap">
+            <div class="icon">
+                <img src="/images/ghost.svg" class="title-icon"/>
+            </div>
+            <span class="title">Проекты с нашим участием</span>
+        </h3>
+
+        <div class="slider">
+            <div class="slider-item">
+                <img class="slider-item-pic" src="/images/slider/bitmap1.jpg" alt="">
+                <div class="slider-item-name">Lords Mobile</div>
+            </div>
+            <div class="slider-item">
+                <img class="slider-item-pic" src="/images/slider/bitmap2.jpg" alt="">
+                <div class="slider-item-name">Clash of Queens</div>
+            </div>
+            <div class="slider-item">
+                <img class="slider-item-pic" src="/images/slider/bitmap3.jpg" alt="">
+                <div class="slider-item-name">Clash of Lords 2</div>
+            </div>
+            <div class="slider-item">
+                <img class="slider-item-pic" src="/images/slider/bitmap4.jpg" alt="">
+                <div class="slider-item-name">Magic Rush</div>
+            </div>
+            <div class="slider-item">
+                <img class="slider-item-pic" src="/images/slider/bitmap5.jpg" alt="">
+                <div class="slider-item-name">Castle Clash</div>
+            </div>
+            <div class="slider-item">
+                <img class="slider-item-pic" src="/images/slider/bitmap6.jpg" alt="">
+                <div class="slider-item-name">Age of Magic</div>
+            </div>
+            <div class="slider-item">
+                <img class="slider-item-pic" src="/images/slider/bitmap6.jpg" alt="">
+                <div class="slider-item-name">Age of Magic</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="developers jarallax">
+    <img class="jarallax-img" src="/images/our-expectations-bg@2x.png" alt="">
+    <div class="wrapper">
+
+        <h3 class="title-wrap">
+            <div class="icon">
+                <img src="/images/cloud-computing.svg" class="title-icon"/>
+            </div>
+            <span class="title">Что мы ожидаем от разработчиков</span>
+        </h3>
+        <div class="developers-wrap">
+            <div class="developer-card">
+                <img src="/images/developer1.svg" alt="">
+                <div class="developer-info">
+                    <h4 class="developers-header">Сильная команда</h4>
+                    <p class="developers-descr">Сильная и амбициозная команда, готовая создавать и полировать свою игру
+                        несмотря на трудности!</p>
+                </div>
+            </div>
+            <div class="developer-card">
+                <img src="/images/developer2.svg" alt="">
+                <div class="developer-info">
+                    <h4 class="developers-header">Уникальные и новые механики</h4>
+                    <p class="developers-descr">Мы приветствуем уникальный сеттинг игры, новые возможности и
+                        механики</p>
+                </div>
+            </div>
+            <div class="developer-card">
+                <img src="/images/developer3.svg" alt="">
+                <div class="developer-info">
+                    <h4 class="developers-header">Работа на результат</h4>
+                    <p class="developers-descr">Работа на результат должно быть вашей гравной целью. От вас будет
+                        зависеть успех всего проекта!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="services jarallax">
+    <img class="jarallax-img" src="/images/rocket-05@2x.png" alt="">
+    <h3 class="title-wrap">
+        <div class="icon">
+            <img src="/images/flag.svg" class="title-icon"/>
+        </div>
+        <span class="title">Что вы получите от нас</span>
+    </h3>
+    <div style="display: none;" class="see-more">Проанализируем вашу игру, оценим среду конкуренции жанра вашей игры. Сделаем оценку
+        контента и найдем слабые и сильные факторы. Проведем тестирование, на основе которого поможем вам
+        исправить
+        баги.
+    </div>
+    <div class="mountain">
+        <ul class="mountain-list">
+            <li>Profit и Revenue</li>
+            <li>Эффективная закупка трафика</li>
+            <li>Индивидуальный подход и финансовая помощь</li>
+            <li>Опимизация Монетизации</li>
+            <li>LTV прогнозирование</li>
+            <li>Экспертиза от опытных Геймдизайнеров</li>
+            <li>Маркетинговая стратегия</li>
+            <li>Full App Search Optimisation</li>
+            <li>Полная аналитика приложения</li>
+        </ul>
+    </div>
+    <div class="bg-forest"></div>
+    <div class="bg-trees"></div>
+
+</div>
+
+<div class="contacts">
+    <div class="wrapper">
+        <a href="/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="230px" height="auto" viewBox="0 0 140 25">
+                <g fill="#eeeef1" fill-rule="evenodd" stroke="transparent" stroke-width=".5">
+                    <path d="M106.276,5.873 L99.057,5.873 L99.057,8.6 L106.257,8.6 C107.688798,8.6 108.8495,9.76070179 108.8495,11.1925 C108.8495,12.6242982 107.688798,13.785 106.257,13.785 L101.8,13.785 L101.8,11.328 L99.058,11.328 L99.058,20 L101.8,20 L101.8,16.517 L106.287,16.517 L106.287,16.511 C108.18676,16.5092137 109.941257,15.4940533 110.88959,13.8479199 C111.837923,12.2017865 111.836017,10.1747669 110.88459,8.53041984 C109.933163,6.88607276 108.17676,5.87421363 106.277,5.876 L106.276,5.873 Z"
+                          id="Path" stroke-dasharray="71.04631805419922" style="stroke-dashoffset: 0px;"></path>
+                    <path d="M128,11.194 C127.99121,8.29364314 125.66491,5.93268183 122.765,5.881 L122.765,5.875 L115.454,5.875 L115.454,8.6 L122.654,8.6 C124.085522,8.6 125.246,9.76047793 125.246,11.192 C125.246,12.6235221 124.085522,13.784 122.654,13.784 L118.2,13.784 L118.2,11.328 L115.458,11.328 L115.458,20 L118.2,20 L118.2,16.517 L122.769,16.517 L122.769,16.506 C125.667182,16.4527068 127.991243,14.0926591 128,11.194 Z"
+                          id="Path" stroke-dasharray="71.03498840332031" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M36.359 16.533 35.224 13.806 32.711 13.806 34.985 9.054 40.222 20 43.259 20 36.5 5.881 36.5 5.875 33.459 5.875 33.459 5.881 26.71 20 29.746 20 31.407 16.53 36.359 16.53z"
+                          stroke-dasharray="72.09976196289062" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M64.408 5.875 63.908 5.875 63.908 20 74.887 20 75.872 17.274 66.649 17.274 66.649 14.3 71.884 14.3 71.884 11.576 66.649 11.576 66.649 8.6 75.872 8.6 75.872 5.875z"
+                          stroke-dasharray="80.281494140625" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M56.8 20 60.19 20 53.724 12.112 59.748 6.121 56.006 6.121 49.706 12.389 49.706 5.875 46.964 5.875 46.964 20 49.7 20 49.7 16.11 51.854 13.968z"
+                          stroke-dasharray="75.55960845947266" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M88.6 5.875 85.56 5.875 85.56 5.881 81.769 13.807 81.769 13.807 81.769 13.807 78.807 20 81.843 20 83.504 16.53 88.256 16.53 87.121 13.803 84.808 13.803 87.082 9.051 92.319 20 95.356 20 88.6 5.881z"
+                          stroke-dasharray="71.69889831542969" style="stroke-dashoffset: 0px;"></path>
+                    <path id="Path"
+                          d="M17.527 19.982 17.518 20.002 20.531 20.002 20.522 19.982 27.8 3.769 29.136 4.389 28.045 0 23.962 1.989 25.318 2.618 19.025 16.6 14.281 5.878 11.281 5.878 6.543 16.6 3.043 8.672 0.005 8.672 5.05 19.988 5.041 20.008 8.054 20.008 8.045 19.988 12.789 9.267z"
+                          stroke-dasharray="125.2303695678711" style="stroke-dashoffset: 0px;"></path>
+                </g>
+            </svg>
+        </a>
+        <h4 class="subheader">Не ломай голову как привлечь миллионы игроков!</h4>
+        <button class="btn">Отправить проект</button>
+        <div class="contact-us-wrap">
+            <div class="contact-us-in">
+                <p class="sm-name">Email</p>
+                <a href="publishing@wakeapp.com" class="sm-link" target="_blank">publishing@wakeapp.com</a>
+
+            </div>
+            <div class="contact-us-in">
+                <p class="sm-name">Facebook</p>
+                <a href="fb.com/wakeappinc" class="sm-link" target="_blank">fb.com/wakeappinc</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="wrapper">
+        <a href="/" class="rights" target="_blank">© WakeApp.Games Все права защищены</a>
+        <div class="sm-wrap">
+            <a href="/" target="_blank"><img src="/images/twitter.svg" alt="" class="sm-icon"></a>
+            <a href="/" target="_blank"><img src="/images/facebook.svg" alt="" class="sm-icon">
+            </a>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
