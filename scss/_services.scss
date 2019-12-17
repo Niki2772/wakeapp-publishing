@@ -1,48 +1,73 @@
 .services {
   background-color: #eeeef1;
-  padding-bottom: 175px;
-
-  .jarallax-img {
-    width: 339px;
-    height: 476px;
-    object-fit: contain;
-    background-size: initial;
-    position: absolute;
-  }
-
-
+  padding-top: 103px;
+  padding-bottom: 196px;
+  position: relative;
+  overflow: hidden;
 }
 
-.see-more {
-  max-width: 447px;
-  padding: 35px 33px;
-  border-radius: 6px;
-  background-color: #ff5252;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  font-family: "Muller Light";
-  color: #eeeef1;
+.jarallax-rocket {
+  width: 339px;
+  height: 476px;
+  object-fit: contain;
+  background-size: initial;
   position: absolute;
-  top: 430px;
-  left: 480px;
+}
+
+
+%jarallax-cloud {
+  object-fit: contain;
+  background-size: initial;
+  position: absolute;
+}
+
+.jarallax-cloud1 {
+  @extend %jarallax-cloud;
+  width: 391px;
+  height: 52px;
+  top: 484px;
+  right: 0;
+}
+
+.jarallax-cloud2 {
+  @extend %jarallax-cloud;
+  width: 538px;
+  height: 71px;
+  top: 894px;
+  left: -400px;
+}
+
+.jarallax-cloud3 {
+  @extend %jarallax-cloud;
+  width: 369px;
+  height: 41px;
+  top: 1194px;
+  left: -100px;
 }
 
 .mountain {
   background-size: contain;
-
   background: url("/images/mountain-bg.svg") no-repeat 100% 100%;
-  height: 1588px;
+  height: 1428px;
   background-color: #eeeef1;
   width: 100%;
   position: relative;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 75px;
+    background: #eeeef1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .mountain-list {
   position: absolute;
   right: 0;
-  top: 274px;
-  //width: 993px;
+  top: 114px;
   width: 1145px;
   text-align: center;
   list-style: none;
@@ -53,15 +78,18 @@
     display: flex;
     align-items: center;
     margin: 0;
-//    background: rgba(greenyellow, .9);
     background-color: #eeeef1;
     position: relative;
     justify-content: center;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
     padding: 0 0 0 160px;
     cursor: pointer;
     transition: all .3s;
 
-    &:hover {
+    &:hover,
+    &.active {
       background: #fff !important;
     }
 
@@ -72,19 +100,21 @@
       background: #462b6e;
       position: absolute;
       bottom: 0;
-      left: 50%;
+      right: -9px;
       transform: translate(-50%, 0);
     }
 
     &:nth-child(1) {
       height: 344px;
-      clip-path: polygon(634px 0px, 816px 236px, 831px 259px, 748px 342px, 622px 289px, 502px 319px, 464px 261px, 505px 190px, 634px 0px)
+      padding-top: 100px;
+      clip-path: polygon(634px 0px, 816px 236px, 831px 259px, 748px 342px, 622px 289px, 502px 319px, 464px 261px, 505px 190px, 634px 0px);
     }
 
     &:nth-child(2) {
       height: calc(97px + 81px);
       clip-path: polygon(407px 100%, 435px 45px, 463px 0px, 501px 59.3px, 622px 28.8px, 748px 83px, 832.5px -1px, 911px 121px, 937px 100%);
       position: relative;
+      padding-top: 54px;
       top: -83px;
       margin-bottom: -83px;
     }
@@ -92,55 +122,135 @@
     &:nth-child(3) {
       height: 124px;
       clip-path: polygon(407px 0, 937px 0, 994px 100%, 379px 100%);
+
+      &::after {
+        width: 559px;
+        right: -98px;
+      }
     }
 
     &:nth-child(4) {
       height: 95px;
       clip-path: polygon(378px 0, 995px 0, 1069px 100%, 320px 100%);
+
+      &::after {
+        width: 671px;
+        right: -220px;
+      }
     }
 
     &:nth-child(5) {
       height: 97px;
       clip-path: polygon(320px 0, 1068px 0, 1145px 100%, 275px 100%);
+
+      &::after {
+        width: 766px;
+        right: -330px;
+      }
     }
 
     &:nth-child(6) {
       height: 96px;
       clip-path: polygon(275px 0, 1145px 0, 1145px 100%, 230px 100%);
+
+      &::after {
+        width: 867px;
+        right: -434px;
+      }
     }
 
     &:nth-child(7) {
       height: 95px;
-      clip-path: polygon(230px 0px, 1145px 0, 1145px 100%, 151px 100%, 194px 45px)
+      clip-path: polygon(230px 0px, 1145px 0, 1145px 100%, 151px 100%, 194px 45px);
+
+      &::after {
+        width: 934px;
+        right: -468px;
+      }
     }
 
     &:nth-child(8) {
       height: 95px;
       clip-path: polygon(150px 0, 1145px 0, 1145px 100%, 74px 100%);
+
+      &::after {
+        width: 993px;
+        right: -496px;
+      }
     }
 
     &:nth-child(9) {
       height: 95px;
       clip-path: polygon(74px 0, 1145px 0, 1145px 100%, 0 100%);
+
+      &::after {
+        width: 993px;
+        right: -496px;
+      }
     }
   }
 }
 
-.bg-forest {
-  background: url(/images/bg-forest.svg) 100% 0% no-repeat;
+.circle {
+  border: 1px solid #ff5252;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 13px 11px;
+  margin-right: 30px;
+  transition: .3s;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border: 2px solid #ff5252;
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+    left: -2px;
+  }
+
+  .mountain-list li:hover &{
+    background-color: #ff5252;
+
+    &:before {
+      border: 2px solid #eeeef1;
+      border-left: none;
+      border-bottom: none;
+    }
+  }
+
+  .mountain-list li.active & {
+    background-color: #ff5252;
+    padding: 13px 15px;
+    transition: .3s;
+    &:before {
+      border: 2px solid #eeeef1;
+      border-right: none;
+      border-top: none;
+      left: 0;
+    }
+  }
+}
+
+.services-bg {
   height: 389px;
   width: 100%;
-  background-size: cover;
-
+  background-size: cover !important;
   position: absolute;
-  bottom: -120px;
+  bottom: -16px;
+}
+
+.bg-clouds {
+  @extend .services-bg;
+  background: url(/images/bg-clouds.svg) 100% 0% no-repeat;
+
 }
 
 .bg-trees {
+  @extend .services-bg;
   background: url(/images/bg-trees.svg) 100% 0% no-repeat;
-  background-size: cover;
-  height: 389px;
-  width: 100%;
-  position: absolute;
-  bottom: -175px;
 }

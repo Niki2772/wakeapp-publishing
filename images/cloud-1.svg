@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="391px" height="52px" viewBox="0 0 391 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.4461 0.766 759.865 0.766 759.865 56.476 0.4461 56.476"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1049.000000, -3883.000000)">
+            <g id="Group-21" transform="translate(7.000000, 3883.000000)">
+                <g id="Group-24" transform="translate(793.000000, 0.000000)">
+                    <g id="Group-3">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M759.8651,56.476 C759.8651,56.476 530.1821,48.611 302.4541,31.53 C259.77502,28.3288067 265.002509,26.5160871 263.947266,24.9169922 C262.733426,23.0775628 259.174846,21.5536789 263.947266,19.0703933 C271.284229,15.25267 233.492573,6.73912207 258.746717,9.19806447 C278.98378,11.1685044 305.743347,12.9031448 307.9931,22.594 C307.9931,22.594 419.7611,-31.859 459.6591,31.53 C459.6591,31.53 521.7121,-11.289 589.4761,42.142 C589.4761,42.142 625.3131,26.503 629.2221,47.354 L759.8651,56.476 Z" id="Fill-1" fill="#462B6E" opacity="0.12" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M459.6591,31.5302 C459.6591,31.5302 493.3771,3.7152 549.7491,20.4582 C549.7491,20.4582 503.1631,18.9642 459.6591,31.5302" id="Fill-6" fill="#FF5252" opacity="0.15"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

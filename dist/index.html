@@ -6,7 +6,8 @@
     <title>Arrow</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
-
+    <link rel="stylesheet" href="//gitcdn.link/repo/wintercounter/Protip/master/protip.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/object505/tipso/master/src/tipso.css">
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -51,7 +52,7 @@
                 <li><a href="">Publishing</a></li>
                 <li><a href="">Контакты</a></li>
                 <li>
-                    <button class="btn">Отправить проект</button>
+                    <button data-show-reg class="btn">Отправить проект</button>
                 </li>
             </ul>
         </nav>
@@ -70,7 +71,7 @@
                 <li>Улучшим <b>монетизацию</b></li>
                 <li>Настроим <b>рекламу</b></li>
                 <li>Привлечем <b>миллионы пользователей </b></li>
-                <button class="btn">Отправить проект</button>
+                <button data-show-reg class="btn">Отправить проект</button>
             </ul>
         </div>
     </div>
@@ -93,8 +94,8 @@
             <div class="about-us-info"><b>Наша главная цель</b> — помощь талантливым разработчикам мобильных игр на пути
                 от создания первых рабочих прототипов до полной раскрутки и вывода в топ на мобильном рынке.
             </div>
-            <img src="/images/about-us-rocket.png" class="about-us-rocket" alt="">
-            <img src="/images/about-us-crab.png" class="about-us-crab" alt="">
+            <img data-jarallax-element="0 100" src="/images/about-us-rocket.png" class="about-us-rocket" alt="">
+            <img data-jarallax-element="0 -100" src="/images/about-us-crab.png" class="about-us-crab" alt="">
         </div>
     </div>
 </div>
@@ -154,7 +155,7 @@
             <div class="developer-card">
                 <img src="/images/developer1.svg" alt="">
                 <div class="developer-info">
-                    <h4 class="developers-header">Сильная команда</h4>
+                    <h4 class="h4-title">Сильная команда</h4>
                     <p class="developers-descr">Сильная и амбициозная команда, готовая создавать и полировать свою игру
                         несмотря на трудности!</p>
                 </div>
@@ -162,7 +163,7 @@
             <div class="developer-card">
                 <img src="/images/developer2.svg" alt="">
                 <div class="developer-info">
-                    <h4 class="developers-header">Уникальные и новые механики</h4>
+                    <h4 class="h4-title">Уникальные и новые механики</h4>
                     <p class="developers-descr">Мы приветствуем уникальный сеттинг игры, новые возможности и
                         механики</p>
                 </div>
@@ -170,7 +171,7 @@
             <div class="developer-card">
                 <img src="/images/developer3.svg" alt="">
                 <div class="developer-info">
-                    <h4 class="developers-header">Работа на результат</h4>
+                    <h4 class="h4-title">Работа на результат</h4>
                     <p class="developers-descr">Работа на результат должно быть вашей гравной целью. От вас будет
                         зависеть успех всего проекта!</p>
                 </div>
@@ -179,35 +180,62 @@
         </div>
     </div>
 </div>
-<div class="services jarallax">
-    <img class="jarallax-img" src="/images/rocket-05@2x.png" alt="">
+<div class="services">
+    <img data-jarallax-element="-140" class="jarallax-rocket" src="/images/rocket-05@2x.png" alt="">
+    <img data-jarallax-element="0 140" class="jarallax-cloud1" src="/images/cloud-1.svg"/>
+    <img data-jarallax-element="0 -140" class="jarallax-cloud2" src="/images/cloud-2.svg"/>
+    <img data-jarallax-element="0 200" class="jarallax-cloud3" src="/images/cloud-3.svg"/>
+
     <h3 class="title-wrap">
         <div class="icon">
             <img src="/images/flag.svg" class="title-icon"/>
         </div>
         <span class="title">Что вы получите от нас</span>
     </h3>
-    <div style="display: none;" class="see-more">Проанализируем вашу игру, оценим среду конкуренции жанра вашей игры. Сделаем оценку
-        контента и найдем слабые и сильные факторы. Проведем тестирование, на основе которого поможем вам
-        исправить
-        баги.
-    </div>
+
     <div class="mountain">
         <ul class="mountain-list">
-            <li>Profit и Revenue</li>
-            <li>Эффективная закупка трафика</li>
-            <li>Индивидуальный подход и финансовая помощь</li>
-            <li>Опимизация Монетизации</li>
-            <li>LTV прогнозирование</li>
-            <li>Экспертиза от опытных Геймдизайнеров</li>
-            <li>Маркетинговая стратегия</li>
-            <li>Full App Search Optimisation</li>
-            <li>Полная аналитика приложения</li>
+            <li data-tooltip>
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Profit и Revenue
+            </li>
+            <li data-tooltip>
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Эффективная закупка <br/>трафика
+            </li>
+            <li data-tooltip>
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Индивидуальный подход и <br/> финансовая помощь
+            </li>
+            <li data-tooltip >
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Опимизация Монетизации
+            </li>
+            <li data-tooltip >
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                LTV прогнозирование
+            </li>
+            <li data-tooltip >
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Экспертиза от опытных <br/> Геймдизайнеров
+            </li>
+            <li data-tooltip >
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Маркетинговая стратегия
+            </li>
+            <li data-tooltip >
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Full App Search Optimisation
+            </li>
+            <li data-tooltip >
+                <i title="This is my <br/> span's tooltip message! This is my <br/> span's tooltip message!" class="circle"></i>
+                Полная аналитика приложения
+            </li>
         </ul>
     </div>
-    <div class="bg-forest"></div>
-    <div class="bg-trees"></div>
 
+    <div class="bg-clouds"></div>
+    <div class="bg-trees"></div>
 </div>
 
 <div class="contacts">
@@ -238,7 +266,7 @@
             </svg>
         </a>
         <h4 class="subheader">Не ломай голову как привлечь миллионы игроков!</h4>
-        <button class="btn">Отправить проект</button>
+        <button data-show-reg class="btn">Отправить проект</button>
         <div class="contact-us-wrap">
             <div class="contact-us-in">
                 <p class="sm-name">Email</p>
@@ -254,7 +282,7 @@
 </div>
 <div class="footer">
     <div class="wrapper">
-        <a href="/" class="rights" target="_blank">© WakeApp.Games Все права защищены</a>
+        <p class="rights">© WakeApp.Games Все права защищены</p>
         <div class="sm-wrap">
             <a href="/" target="_blank"><img src="/images/twitter.svg" alt="" class="sm-icon"></a>
             <a href="/" target="_blank"><img src="/images/facebook.svg" alt="" class="sm-icon">
@@ -262,6 +290,35 @@
         </div>
 
     </div>
+</div>
+
+<div class="overlay"></div>
+<div class="modal">
+    <div class="modal-in">
+        <div class="modal-bg"></div>
+        <div class="registration-wrap">
+            <div class="h4-title">Отправить проект</div>
+            <form action="/">
+
+                <div class="input-group">
+                    <label for="firstName">Ваше имя</label>
+                    <input type="text" name="firstName" id="firstName"/>
+                </div>
+
+                <div class="input-group">
+                    <label for="contacts">Ваши контакты</label>
+                    <input type="text" name="contacts" id="contacts"/>
+                    <div class="contact-options">Telegramm/Skype/Электронная почта</div>
+                </div>
+                <div class="input-group">
+                    <label for="comments">Ваши контакты</label>
+                    <textarea type="text" name="comments" id="comments"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Отправить проект"/>
+            </form>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>
